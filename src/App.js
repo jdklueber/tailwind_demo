@@ -7,7 +7,7 @@ function App() {
     const [currentTab, setCurrentTab] = useState("ALL");
 
   return (
-    <div>
+    <div className={"px-5"}>
         <Header setCurrentTab={setCurrentTab} currentTab={currentTab} />
         <PeopleList data={data.people} filter={currentTab}/>
     </div>

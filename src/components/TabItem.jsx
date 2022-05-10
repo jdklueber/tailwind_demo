@@ -4,9 +4,10 @@ function TabItem({label, setter, currentTab}) {
     const prefix = currentTab === label ? ">" : "";
 
     return (
-        <li onClick={setter}>
-            {`${prefix} ${label}`}
-        </li>
+
+        <option value={label}>
+            {label}
+        </option>
     )
 }
 
